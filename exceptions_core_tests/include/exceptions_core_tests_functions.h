@@ -34,6 +34,11 @@ void TestThrowDirectoryNotFoundException();
  * @brief Tests the ThrowFileAccessFailedException function
  */
 void TestThrowFileAccessFailedException();
+
+/**
+ * @name TestThrowFileNotFoundException
+ * @brief Tests the ThrowFileNotFoundException function.
+ */
 void TestThrowFileNotFoundException();
 void TestGetAndSetFailureExitCode();
 void TestThrowMarshalingException();
