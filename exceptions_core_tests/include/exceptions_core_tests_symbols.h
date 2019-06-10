@@ -5,6 +5,11 @@
 #ifndef __EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
 
+/**
+ * @name AND_I_MUST_PRINT_OUTPUT_FORMAT
+ * @brief fprintf format for the message that is to be displayed to the
+ * console (STDOUT) by the AndIMustPrint function.
+ */
 #ifndef AND_I_MUST_PRINT_OUTPUT_FORMAT
 #define AND_I_MUST_PRINT_OUTPUT_FORMAT \
   "AndIMustPrint: %s"
