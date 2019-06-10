@@ -30,6 +30,10 @@
   "pszMessage"
 #endif //MESSAGE_ARGUMENT_NAME
 
+/**
+ * @name SIDE_LENGTH_ARGUMENT_NAME
+ * @brief Used to display the name of the argument to CalcArea.
+ */
 #ifndef SIDE_LENGTH_ARGUMENT_NAME
 #define SIDE_LENGTH_ARGUMENT_NAME \
     "nSideLength"
