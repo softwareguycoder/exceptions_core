@@ -27,7 +27,7 @@ void AndIMustPrint(const char* pszMessage) {
 int CalcArea(int nSideLength) {
   fprintf(stdout, IN_CALC_AREA);
   if (nSideLength < 0) {
-    ThrowArgumentOutOfRangeException("nSideLength");
+    ThrowArgumentOutOfRangeException(SIDE_LENGTH_ARGUMENT_NAME);
   }
 
   return nSideLength * nSideLength;
