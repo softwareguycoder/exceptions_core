@@ -44,6 +44,12 @@
     "the range of valid values.\n"
 #endif //ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION
 
+/**
+ * @name ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME
+ * @brief Format used for the message written to STDERR by the
+ * ThrowFileAccessFailedException function when no custom message is supplied,
+ * and the name of the user function that failed is also not supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME
 #define ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME \
     "ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n"
