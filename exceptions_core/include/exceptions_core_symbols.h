@@ -18,6 +18,13 @@
     "not provided.\n"
 #endif //ERROR_ARGUMENT_EXCEPTION
 
+/**
+ * @name ERROR_FORMAT_ARGUMENT_EXCEPTION
+ * @brief Error message displayed when a required argument is not supplied
+ * to a function that needs it.
+ * @remarks Incorporates a custom error message that the caller of the
+ * ThrowArgumentException function provides.
+ */
 #ifndef ERROR_FORMAT_ARGUMENT_EXCEPTION
 #define ERROR_FORMAT_ARGUMENT_EXCEPTION \
     "ERROR (ArgumentException): The required argument, '%s', was " \
