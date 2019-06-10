@@ -6,6 +6,7 @@
 #include "exceptions_core_tests.h"
 
 #include "exceptions_core_tests_functions.h"
+#include "exceptions_core_tests_symbols.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // Testing-domain-language functions
@@ -15,7 +16,7 @@
 
 void AndIMustPrint(const char* pszMessage) {
   if (IsNullOrWhiteSpace(pszMessage)) {
-    ThrowArgumentException("pszMessage");
+    ThrowArgumentException(MESSAGE_ARGUMENT_NAME);
   }
   fprintf(stdout, "AndIMustPrint: %s", pszMessage);
 }
