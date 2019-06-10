@@ -39,4 +39,13 @@
     "nSideLength"
 #endif //SIDE_LENGTH_ARGUMENT_NAME
 
+/**
+ * @name SOFTWARE_TITLE
+ * @brief Used to display this software's title on the console.
+ */
+#ifndef SOFTWARE_TITLE
+#define SOFTWARE_TITLE \
+  "exceptions_core Library Test Harness v1.0\n"
+#endif //SOFTWARE_TITLE
+
 #endif //__EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
