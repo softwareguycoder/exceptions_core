@@ -55,6 +55,12 @@
     "ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n"
 #endif //ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME
 
+/**
+ * @name ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
+ * @brief Format used for the message written to STDERR by the
+ * ThrowFileAccessFailedException function when a custom message is supplied,
+ * and the name of the user function that failed is not supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
 #define ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME \
     "ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n\t%s"
