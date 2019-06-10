@@ -58,6 +58,12 @@ void TestThrowMarshalingException();
  * @brief Tests the ThrowNullReferenceException function.
  */
 void TestThrowNullReferenceException();
+
+/**
+ * @name TestThrowOutOfMemoryExceptionWithCustomMessage
+ * @brief Tests the ThrowOutOfMemoryException function with a user-supplied
+ * message.
+ */
 void TestThrowOutOfMemoryExceptionWithCustomMessage();
 void TestThrowOutOfMemoryExceptionWithNullMessage();
 void TestThrowUUIDInvalidException();
