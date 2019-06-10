@@ -54,7 +54,7 @@ void TestThrowArgumentException() {
   AndIMustPrint(HELLO_WORLD);
 
   fprintf(stdout,
-      "Calling AndIMustPrint with its required parameter set to NULL...\n");
+      CALLING_AND_I_MUST_PRINT_WITH_INVALID_INPUT);
   AndIMustPrint(NULL);
 
   fprintf(stdout,
