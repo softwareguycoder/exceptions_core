@@ -15,6 +15,11 @@
   "AndIMustPrint: %s"
 #endif //AND_I_MUST_PRINT_OUTPUT_FORMAT
 
+#ifndef IN_CALC_AREA
+#define IN_CALC_AREA \
+  "In CalcArea\n"
+#endif //IN_CALC_AREA
+
 /**
  * @name MESSAGE_ARGUMENT_NAME
  * @brief Used to supply the name of a parameter named 'pszMessage' to
