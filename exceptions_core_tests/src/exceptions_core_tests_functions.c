@@ -25,7 +25,7 @@ void AndIMustPrint(const char* pszMessage) {
 // CalcArea function
 
 int CalcArea(int sideLength) {
-  fprintf(stdout, "In CalcArea\n");
+  fprintf(stdout, IN_CALC_AREA);
   if (sideLength < 0) {
     ThrowArgumentOutOfRangeException("nSideLength");
   }
