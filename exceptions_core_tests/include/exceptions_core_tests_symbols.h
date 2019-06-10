@@ -21,6 +21,16 @@
 #endif //IN_CALC_AREA
 
 /**
+ * @name IN_TEST_THROW_ARGUMENT_EXCEPTION
+ * @brief Message displayed on console to inform interactive user that the
+ * execution has reached the TestThrowArgumentException function.
+ */
+#ifndef IN_TEST_THROW_ARGUMENT_EXCEPTION
+#define IN_TEST_THROW_ARGUMENT_EXCEPTION \
+  "In TestThrowArgumentException\n"
+#endif //IN_TEST_THROW_ARGUMENT_EXCEPTION
+
+/**
  * @name MESSAGE_ARGUMENT_NAME
  * @brief Used to supply the name of a parameter named 'pszMessage' to
  * the ThrowArgumentException function.
