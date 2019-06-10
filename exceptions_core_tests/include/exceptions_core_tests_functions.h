@@ -40,6 +40,11 @@ void TestThrowFileAccessFailedException();
  * @brief Tests the ThrowFileNotFoundException function.
  */
 void TestThrowFileNotFoundException();
+
+/**
+ * @name TestGetAndSetFailureExitCode
+ * @brief Tests the GetFailureExitCode and SetFailureExitCode functions.
+ */
 void TestGetAndSetFailureExitCode();
 void TestThrowMarshalingException();
 void TestThrowNullReferenceException();
