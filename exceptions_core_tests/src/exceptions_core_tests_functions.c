@@ -209,7 +209,7 @@ void TestThrowNullReferenceException() {
 void TestThrowOutOfMemoryExceptionWithCustomMessage() {
   fprintf(stdout,
       "Testing the ThrowOutOfMemoryException function with custom message...\n");
-  ThrowOutOfMemoryException("Hello, world!");
+  ThrowOutOfMemoryException("Hello, world!\n");
 }
 
 ///////////////////////////////////////////////////////////////////////////////

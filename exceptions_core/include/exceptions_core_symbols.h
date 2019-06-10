@@ -106,6 +106,18 @@
 #endif //ERROR_FORMAT_MARSHALING_EXCEPTION
 
 /**
+ * @name ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE
+ * @brief Format string for fprintf that allows the caller of the
+ * ThrowOutOfMemoryException function to supply a custom message.
+ * @remarks The error message informs the interactive user of failure to
+ * allocate memory and incorporates the custom message supplied by the caller.
+ */
+#ifndef ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE
+#define ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE \
+  "ERROR (OutOfMemoryException):  %s"
+#endif //ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE
+
+/**
  * @name ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
  * @brief Error message that is displayed for the ThrowOutOfMemoryException
  * function if the caller does not supply a custom message.

@@ -204,7 +204,8 @@ void ThrowOutOfMemoryException(const char* pszMessage) {
   if (IsNullOrWhiteSpace(pszMessage)) {
     fprintf(stderr, ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE);
   } else {
-    fprintf(stderr, "%s", pszMessage);
+    fprintf(stderr, ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE,
+        pszMessage);
   }
   exit(GetFailureExitCode());
 }
