@@ -85,7 +85,8 @@
  */
 #ifndef ERROR_FORMAT_FAILED_ACCESS_FILE
 #define ERROR_FORMAT_FAILED_ACCESS_FILE \
-    "%s: ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n\t%s"
+    "%s: ERROR (FileAccessFailedException):\n\tCan't access the file '%s'" \
+    ".\n\t%s"
 #endif //ERROR_FORMAT_FAILED_ACCESS_FILE
 
 #ifndef ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_NO_FXNNAME
