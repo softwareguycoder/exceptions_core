@@ -5,6 +5,11 @@
 #ifndef __EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
 
+#ifndef AND_I_MUST_PRINT_OUTPUT_FORMAT
+#define AND_I_MUST_PRINT_OUTPUT_FORMAT \
+  "AndIMustPrint: %s"
+#endif //AND_I_MUST_PRINT_OUTPUT_FORMAT
+
 /**
  * @name MESSAGE_ARGUMENT_NAME
  * @brief Used to supply the name of a parameter named 'pszMessage' to
