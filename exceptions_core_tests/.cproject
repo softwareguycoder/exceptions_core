@@ -89,7 +89,7 @@
                                     								
                                 </option>
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.libs.325002883" superClass="gnu.c.link.option.libs" valueType="libs">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.libs.325002883" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="exceptions_core"/>
                                     									
@@ -113,7 +113,7 @@
                             							
                             <tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1478995496" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.1568334421" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.1568334421" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/exceptions_core}&quot;"/>
                                     									
@@ -241,7 +241,7 @@
                             							
                             <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.79884412" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release">
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.paths.2095491818" superClass="gnu.c.link.option.paths" valueType="libPaths">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.paths.2095491818" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
                                     <listOptionValue builtIn="false" value="/home/bhart/lib"/>
                                     								
