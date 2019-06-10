@@ -15,6 +15,16 @@
   "AndIMustPrint: %s"
 #endif //AND_I_MUST_PRINT_OUTPUT_FORMAT
 
+/**
+ * @name CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT
+ * @brief Message displayed on the console to explain that we are calling the
+ * AndIMustPrint function with valid input.
+ */
+#ifndef CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT
+#define CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT \
+  "Calling AndIMustPrint with a valid message...\n"
+#endif //CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT
+
 #ifndef IN_CALC_AREA
 #define IN_CALC_AREA \
   "In CalcArea\n"
