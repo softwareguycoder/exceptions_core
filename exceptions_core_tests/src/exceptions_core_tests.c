@@ -22,6 +22,8 @@ int main(int argc, char* argv[]) {
   // Now test the exception functions. Since each exception, when thrown,
   // forces the calling application to abruptly terminate, the idea is that
   // we should comment out all but one of the following calls.
+  //TestThrowArgumentException();
+
   //TestThrowArgumentOutOfRangeException();
 
   //TestThrowDirectoryNotFoundException();
@@ -34,9 +36,13 @@ int main(int argc, char* argv[]) {
 
   //TestThrowNullReferenceException();
 
+  TestThrowOutOfMemoryExceptionWithCustomMessage();
+
+  //TestThrowOutOfMemoryExceptionWithNullMessage();
+
   //TestThrowUUIDInvalidException();
 
-  TestThrowUUIDNullException();
+  //TestThrowUUIDNullException();
 
   // If you have one of the Test*Exception functions activated, then the
   // code should never reach this point

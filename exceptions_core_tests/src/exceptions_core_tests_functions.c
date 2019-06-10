@@ -204,6 +204,24 @@ void TestThrowNullReferenceException() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
+// TestThrowOutOfMemoryExceptionWithCustomMessage function
+
+void TestThrowOutOfMemoryExceptionWithCustomMessage() {
+  fprintf(stdout,
+      "Testing the ThrowOutOfMemoryException function with custom message...\n");
+  ThrowOutOfMemoryException("Hello, world!");
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// TestThrowOutOfMemoryExceptionWithNullMessage function
+
+void TestThrowOutOfMemoryExceptionWithNullMessage() {
+  fprintf(stdout,
+      "Testing the ThrowOutOfMemoryException function with NULL message...\n");
+  ThrowOutOfMemoryException(NULL);
+}
+
+///////////////////////////////////////////////////////////////////////////////
 // TestThrowUUIDInvalidException function
 
 void TestThrowUUIDInvalidException() {

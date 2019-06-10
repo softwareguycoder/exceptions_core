@@ -14,6 +14,8 @@ void TestThrowFileNotFoundException();
 void TestGetAndSetFailureExitCode();
 void TestThrowMarshalingException();
 void TestThrowNullReferenceException();
+void TestThrowOutOfMemoryExceptionWithCustomMessage();
+void TestThrowOutOfMemoryExceptionWithNullMessage();
 void TestThrowUUIDInvalidException();
 void TestThrowUUIDNullException();
 
