@@ -89,6 +89,12 @@
     ".\n\t%s"
 #endif //ERROR_FORMAT_FAILED_ACCESS_FILE
 
+/**
+ * @name ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_NO_FXNNAME
+ * @brief Format used for the message written to STDERR by the
+ * ThrowFileNotFoundException function when no custom message is supplied,
+ * and the name of the user function that failed is also not supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_NO_FXNNAME
 #define ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_NO_FXNNAME \
   "ERROR (FileNotFoundException):\n\tFile '%s' not found.\n"
