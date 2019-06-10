@@ -31,6 +31,13 @@
     "not provided.\n"
 #endif //ERROR_FORMAT_ARGUMENT_EXCEPTION
 
+/**
+ * @name ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION
+ * @brief Error message that is displayed when an argument supplied to a
+ * user function has a value that is not in the proper range.
+ * @remarks Incorporates the name of the user function parameter whose value
+ * was not in the required range.
+ */
 #ifndef ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION
 #define ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION \
     "ERROR (ArgumentOutOfRangeException): The argument '%s' is outside of " \
