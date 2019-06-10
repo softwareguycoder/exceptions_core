@@ -25,6 +25,15 @@
   "Calling AndIMustPrint with a valid message...\n"
 #endif //CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT
 
+/**
+ * @name HELLO_WORLD
+ * @brief Message used to display Hello, world! to the console, for testing
+ * purposes.
+ */
+#ifndef HELLO_WORLD
+#define HELLO_WORLD "Hello, world!\n"
+#endif //HELLO_WORLD
+
 #ifndef IN_CALC_AREA
 #define IN_CALC_AREA \
   "In CalcArea\n"

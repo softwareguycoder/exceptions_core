@@ -51,7 +51,7 @@ void TestThrowArgumentException() {
   fprintf(stdout, IN_TEST_THROW_ARGUMENT_EXCEPTION);
 
   fprintf(stdout, CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT);
-  AndIMustPrint("Hello, world!\n");
+  AndIMustPrint(HELLO_WORLD);
 
   fprintf(stdout,
       "Calling AndIMustPrint with its required parameter set to NULL...\n");
@@ -210,7 +210,7 @@ void TestThrowNullReferenceException() {
 void TestThrowOutOfMemoryExceptionWithCustomMessage() {
   fprintf(stdout,
       "Testing the ThrowOutOfMemoryException function with custom message...\n");
-  ThrowOutOfMemoryException("Hello, world!\n");
+  ThrowOutOfMemoryException(HELLO_WORLD);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
