@@ -10,6 +10,19 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Testing-domain-language functions
 
+///////////////////////////////////////////////////////////////////////////////
+// AndIMustPrint function
+
+void AndIMustPrint(const char* pszMessage) {
+  if (IsNullOrWhiteSpace(pszMessage)) {
+    ThrowArgumentException("pszMessage");
+  }
+  fprintf(stdout, "AndIMustPrint: %s", pszMessage);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// CalcArea function
+
 int CalcArea(int sideLength) {
   fprintf(stdout, "In CalcArea\n");
   if (sideLength < 0) {
@@ -31,29 +44,20 @@ void PrintSoftwareTitleAndCopyright() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-// TestGetAndSetFailureExitCode function
+// TestThrowArgumentException function
 
-void TestGetAndSetFailureExitCode() {
-  int nFailureExitCode = GetFailureExitCode();
-  if (EXIT_FAILURE == nFailureExitCode) {
-    fprintf(stdout, "The return of GetFailureExitCode is EXIT_FAILURE.\n");
-  } else {
-    fprintf(stdout, "The return of GetFailureExitCode is %d.\n",
-        nFailureExitCode);
-  }
+void TestThrowArgumentException() {
+  fprintf(stdout, "In TestThrowArgumentException");
 
-  fprintf(stdout, "Setting failure exit code to 5...\n");
-  nFailureExitCode = 5;
-  SetFailureExitCode(nFailureExitCode);
-  fprintf(stdout, "Failure exit code set to %d.\n",
-      GetFailureExitCode());
+  fprintf(stdout, "Calling AndIMustPrint with a valid message...\n");
+  AndIMustPrint("Hello, world!\n");
 
-  fprintf(stdout, "Restoring the value of the failure exit code...\n");
-  fprintf(stdout, "EXIT_FAILURE = %d\n", EXIT_FAILURE);
-  nFailureExitCode = EXIT_FAILURE;
-  SetFailureExitCode(nFailureExitCode);
-  fprintf(stdout, "Failure exit code set to %d.\n",
-      GetFailureExitCode());
+  fprintf(stdout,
+      "Calling AndIMustPrint with its required parameter set to NULL...\n");
+  AndIMustPrint(NULL);
+
+  fprintf(stdout,
+      "TestThrowArgumentException: The code should never get here.\n");
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -149,6 +153,32 @@ void TestThrowFileNotFoundException() {
 
   ThrowFileNotFoundException(NULL,
       pszFilePath, NULL);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// TestGetAndSetFailureExitCode function
+
+void TestGetAndSetFailureExitCode() {
+  int nFailureExitCode = GetFailureExitCode();
+  if (EXIT_FAILURE == nFailureExitCode) {
+    fprintf(stdout, "The return of GetFailureExitCode is EXIT_FAILURE.\n");
+  } else {
+    fprintf(stdout, "The return of GetFailureExitCode is %d.\n",
+        nFailureExitCode);
+  }
+
+  fprintf(stdout, "Setting failure exit code to 5...\n");
+  nFailureExitCode = 5;
+  SetFailureExitCode(nFailureExitCode);
+  fprintf(stdout, "Failure exit code set to %d.\n",
+      GetFailureExitCode());
+
+  fprintf(stdout, "Restoring the value of the failure exit code...\n");
+  fprintf(stdout, "EXIT_FAILURE = %d\n", EXIT_FAILURE);
+  nFailureExitCode = EXIT_FAILURE;
+  SetFailureExitCode(nFailureExitCode);
+  fprintf(stdout, "Failure exit code set to %d.\n",
+      GetFailureExitCode());
 }
 
 ///////////////////////////////////////////////////////////////////////////////

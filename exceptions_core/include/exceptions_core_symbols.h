@@ -5,32 +5,6 @@
 #ifndef __EXCEPTIONS_CORE_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_SYMBOLS_H__
 
-#ifndef ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
-#define ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE \
-  "ERROR (OutOfMemoryException):  The system was unable to allocate storage.\n"
-#endif //ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
-
-/**
- * @name ERROR_UUID_NULL_EXCEPTION
- * @brief Error message that is displayed when the caller passes a NULL value
- * for a pointer meant to be filled in.
- */
-#ifndef ERROR_UUID_NULL_EXCEPTION
-#define ERROR_UUID_NULL_EXCEPTION \
-  "ERROR (UUIDNullException):\n\tFunction expected a pointer to a UUID " \
-  "and NULL was passed.\n"
-#endif //ERROR_UUID_NULL_EXCEPTION
-
-#ifndef ERROR_UUID_INVALID_EXCEPTION
-#define ERROR_UUID_INVALID_EXCEPTION \
-  "ERROR (UUIDInvalidException): Invalid UUID value encountered.\n"
-#endif //ERROR_UUID_INVALID_EXCEPTION
-
-#ifndef ERROR_FORMAT_MARSHALING_EXCEPTION
-#define ERROR_FORMAT_MARSHALING_EXCEPTION \
-  "ERROR (MarshalingException): %s"
-#endif //ERROR_FORMAT_MARSHALING_EXCEPTION
-
 /**
  * @name ERROR_INVALID_PTR_ARG_EXCEPTION
  * @brief Error message that is displayed when a fucntion is passed a pointer
@@ -119,5 +93,49 @@
 #define ERROR_FORMAT_FAILED_FIND_DIR \
   "%s: ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
 #endif //ERROR_FORMAT_FAILED_FIND_DIR
+
+/**
+ * @name ERROR_FORMAT_MARSHALING_EXCEPTION
+ * @brief Defines the fprintf format string for the error that gets displayed
+ * to the user when the system fails to marshal a block across a thread
+ * boundary or other boundary.
+ */
+#ifndef ERROR_FORMAT_MARSHALING_EXCEPTION
+#define ERROR_FORMAT_MARSHALING_EXCEPTION \
+  "ERROR (MarshalingException): %s"
+#endif //ERROR_FORMAT_MARSHALING_EXCEPTION
+
+/**
+ * @name ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
+ * @brief Error message that is displayed for the ThrowOutOfMemoryException
+ * function if the caller does not supply a custom message.
+ * @remarks The error message informs the interactive user or error console
+ * that the system failed to allocate storage.
+ */
+#ifndef ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
+#define ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE \
+  "ERROR (OutOfMemoryException):  The system was unable to allocate storage.\n"
+#endif //ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
+
+/**
+ * @name ERROR_UUID_INVALID_EXCEPTION
+ * @brief Error message that is displayed when a function attempts to work
+ * with a UUID value that is invalid.
+ */
+#ifndef ERROR_UUID_INVALID_EXCEPTION
+#define ERROR_UUID_INVALID_EXCEPTION \
+  "ERROR (UUIDInvalidException): Invalid UUID value encountered.\n"
+#endif //ERROR_UUID_INVALID_EXCEPTION
+
+/**
+ * @name ERROR_UUID_NULL_EXCEPTION
+ * @brief Error message that is displayed when the caller passes a NULL value
+ * for a pointer meant to be filled in.
+ */
+#ifndef ERROR_UUID_NULL_EXCEPTION
+#define ERROR_UUID_NULL_EXCEPTION \
+  "ERROR (UUIDNullException):\n\tFunction expected a pointer to a UUID " \
+  "and NULL was passed.\n"
+#endif //ERROR_UUID_NULL_EXCEPTION
 
 #endif //__EXCEPTIONS_CORE_SYMBOLS_H__

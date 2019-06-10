@@ -6,11 +6,12 @@
 #define __EXCEPTIONS_CORE_TESTS_FUNCTIONS_H__
 
 void PrintSoftwareTitleAndCopyright();
-void TestGetAndSetFailureExitCode();
+void TestThrowArgumentException();
 void TestThrowArgumentOutOfRangeException();
 void TestThrowDirectoryNotFoundException();
 void TestThrowFileAccessFailedException();
 void TestThrowFileNotFoundException();
+void TestGetAndSetFailureExitCode();
 void TestThrowMarshalingException();
 void TestThrowNullReferenceException();
 void TestThrowUUIDInvalidException();
