@@ -71,6 +71,11 @@ void TestThrowOutOfMemoryExceptionWithCustomMessage();
  * @brief Tests the ThrowOutOfMemoryException function with a default message.
  */
 void TestThrowOutOfMemoryExceptionWithNullMessage();
+
+/**
+ * @name TestThrowUUIDInvalidException
+ * @brief Tests the ThrowUUIDInvalidException function.
+ */
 void TestThrowUUIDInvalidException();
 void TestThrowUUIDNullException();
 
