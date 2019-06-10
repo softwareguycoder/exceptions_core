@@ -185,6 +185,18 @@ void ThrowNullReferenceException() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
+// ThrowOutOfMemoryException function
+
+void ThrowOutOfMemoryException(const char* pszMessage) {
+  if (IsNullOrWhiteSpace(pszMessage)) {
+    fprintf(stderr, ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE);
+  } else {
+    fprintf(stderr, pszMessage);
+  }
+  exit(GetFailureExitCode());
+}
+
+///////////////////////////////////////////////////////////////////////////////
 // ThrowUUIDInvalidException function
 
 void ThrowUUIDInvalidException() {

@@ -106,6 +106,19 @@ void ThrowMarshalingException(const char* pszMessage);
 void ThrowNullReferenceException();
 
 /**
+ * @name ThrowOutOfMemoryException
+ * @brief Causes the program to report that the program was unable to allocate
+ * memory storage.  A custom message may be supplied.
+ * @param pszMessage Address of the message to be displayed.  If NULL, then
+ * a default message may be displayed.
+ * @remarks Call this function when the program attempted a malloc, calloc,
+ * or realloc operation and the operation failed.  This function, when called,
+ * displays a message to STDERR and then brings the calling application to
+ * a halt.
+ */
+void ThrowOutOfMemoryException(const char* pszMessage);
+
+/**
  * @name ThrowUUIDInvalidException
  * @brief Causes the program to report that a UUID value is invalid and then
  * forcibly terminates the program.
