@@ -42,6 +42,18 @@
     "that wasn't expecting it.\n"
 #endif //ERROR_INVALID_PTR_ARG_EXCEPTION
 
+#ifndef ERROR_FORMAT_ARGUMENT_EXCEPTION
+#define ERROR_FORMAT_ARGUMENT_EXCEPTION \
+    "ERROR (ArgumentOutOfRangeException): The required argument, '%s', was " \
+    "not provided.\n"
+#endif //ERROR_FORMAT_ARGUMENT_EXCEPTION
+
+#ifndef ERROR_ARGUMENT_EXCEPTION
+#define ERROR_ARGUMENT_EXCEPTION \
+    "ERROR (ArgumentOutOfRangeException): A required argument was " \
+    "not provided.\n"
+#endif //ERROR_ARGUMENT_EXCEPTION
+
 #ifndef ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION
 #define ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION \
     "ERROR (ArgumentOutOfRangeException): The argument '%s' is outside of " \
