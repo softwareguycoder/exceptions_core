@@ -5,28 +5,17 @@
 #ifndef __EXCEPTIONS_CORE_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_SYMBOLS_H__
 
-/**
- * @name ERROR_INVALID_PTR_ARG_EXCEPTION
- * @brief Error message that is displayed when a fucntion is passed a pointer
- * that should not be NULL.
- */
-#ifndef ERROR_INVALID_PTR_ARG_EXCEPTION
-#define ERROR_INVALID_PTR_ARG_EXCEPTION \
-    "ERROR (NullReferenceException):\n\tA NULL pointer was passed to a " \
-    "that wasn't expecting it.\n"
-#endif //ERROR_INVALID_PTR_ARG_EXCEPTION
+#ifndef ERROR_ARGUMENT_EXCEPTION
+#define ERROR_ARGUMENT_EXCEPTION \
+    "ERROR (ArgumentException): A required argument was " \
+    "not provided.\n"
+#endif //ERROR_ARGUMENT_EXCEPTION
 
 #ifndef ERROR_FORMAT_ARGUMENT_EXCEPTION
 #define ERROR_FORMAT_ARGUMENT_EXCEPTION \
-    "ERROR (ArgumentOutOfRangeException): The required argument, '%s', was " \
+    "ERROR (ArgumentException): The required argument, '%s', was " \
     "not provided.\n"
 #endif //ERROR_FORMAT_ARGUMENT_EXCEPTION
-
-#ifndef ERROR_ARGUMENT_EXCEPTION
-#define ERROR_ARGUMENT_EXCEPTION \
-    "ERROR (ArgumentOutOfRangeException): A required argument was " \
-    "not provided.\n"
-#endif //ERROR_ARGUMENT_EXCEPTION
 
 #ifndef ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION
 #define ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION \
@@ -104,6 +93,17 @@
 #define ERROR_FORMAT_MARSHALING_EXCEPTION \
   "ERROR (MarshalingException): %s"
 #endif //ERROR_FORMAT_MARSHALING_EXCEPTION
+
+/**
+ * @name ERROR_INVALID_PTR_ARG_EXCEPTION
+ * @brief Error message that is displayed when a fucntion is passed a pointer
+ * that should not be NULL.
+ */
+#ifndef ERROR_INVALID_PTR_ARG_EXCEPTION
+#define ERROR_INVALID_PTR_ARG_EXCEPTION \
+    "ERROR (NullReferenceException):\n\tA NULL pointer was passed to a " \
+    "that wasn't expecting it.\n"
+#endif //ERROR_INVALID_PTR_ARG_EXCEPTION
 
 /**
  * @name ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE
