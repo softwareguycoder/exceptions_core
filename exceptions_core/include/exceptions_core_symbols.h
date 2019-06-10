@@ -5,6 +5,11 @@
 #ifndef __EXCEPTIONS_CORE_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_SYMBOLS_H__
 
+#ifndef ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
+#define ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE \
+  "ERROR (OutOfMemoryException):  The system was unable to allocate storage.\n"
+#endif //ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
+
 /**
  * @name ERROR_UUID_NULL_EXCEPTION
  * @brief Error message that is displayed when the caller passes a NULL value
