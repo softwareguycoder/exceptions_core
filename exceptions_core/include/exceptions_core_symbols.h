@@ -166,6 +166,12 @@
   "%s: ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found."
 #endif //ERROR_FORMAT_FAILED_FIND_DIR_WITH_FXNNAME_NO_MESSAGE
 
+/**
+ * @name ERROR_FORMAT_FAILED_FIND_DIR
+ * @brief Error message displayed by the ThrowDirectoryNotFoundException
+ * function when it knows the path name of the file in question, the custom
+ * message is supplied, and the name of the user function is supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_FIND_DIR
 #define ERROR_FORMAT_FAILED_FIND_DIR \
   "%s: ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
