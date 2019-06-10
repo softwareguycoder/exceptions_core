@@ -16,6 +16,15 @@
 #endif //AND_I_MUST_PRINT_OUTPUT_FORMAT
 
 /**
+ * @name CALLING_AND_I_MUST_PRINT_WITH_INVALID_INPUT
+ * @brief Message displayed to the console to let the interactive user
+ * know we are calling the AndIMustPrint function with invalid input.
+ */
+#ifndef CALLING_AND_I_MUST_PRINT_WITH_INVALID_INPUT
+#define CALLING_AND_I_MUST_PRINT_WITH_INVALID_INPUT \
+  "Calling AndIMustPrint with its required parameter set to NULL...\n"
+#endif //CALLING_AND_I_MUST_PRINT_WITH_INVALID_INPUT
+/**
  * @name CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT
  * @brief Message displayed on the console to explain that we are calling the
  * AndIMustPrint function with valid input.
