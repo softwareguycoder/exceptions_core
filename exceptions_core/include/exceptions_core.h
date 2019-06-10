@@ -23,6 +23,21 @@ int GetFailureExitCode();
 void SetFailureExitCode(int nExitCode);
 
 /**
+ * @name ThrowArgumentException
+ * @brief Prints an error message about the specified parameter not having a
+ * value at all (i.e., not being provided) when, in fact, it's a required
+ * parameter to the calling function.
+ * @param pszParanName String containing the name of the parameter whose value
+ * is not provided.
+ * @remarks This function displays the name of the parameter along with a
+ * error message, and then shuts down the calling executable with an exit
+ * code returned by the GetFailureExitCode() function.  This function should
+ * be called when a required argument is not provided to a function and there
+ * is no way for the application to continue otherwise.
+ */
+void ThrowArgumentException(const char* pszParamName);
+
+/**
  * @name ThrowArgumentOutOfRangeException
  * @brief Prints an error message about the specified parameter not having a
  * value in the proper range to the console, and then terminates the calling

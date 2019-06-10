@@ -83,6 +83,19 @@ void SetFailureExitCode(int nExitCode) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
+// ThrowArgumentException function
+
+void ThrowArgumentException(const char* pszParamName) {
+  if (!IsNullOrWhiteSpace(pszParamName)) {
+    fprintf(stderr, ERROR_FORMAT_ARGUMENT_EXCEPTION,
+        pszParamName);
+  } else {
+    fprint(stderr, ERROR_ARGUMENT_EXCEPTION);
+  }
+  exit(GetFailureExitCode());
+}
+
+///////////////////////////////////////////////////////////////////////////////
 // ThrowArgumentOutOfRangeException function
 
 void ThrowArgumentOutOfRangeException(const char* pszParamName) {
