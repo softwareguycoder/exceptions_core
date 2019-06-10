@@ -48,7 +48,7 @@ void PrintSoftwareTitleAndCopyright() {
 // TestThrowArgumentException function
 
 void TestThrowArgumentException() {
-  fprintf(stdout, "In TestThrowArgumentException");
+  fprintf(stdout, IN_TEST_THROW_ARGUMENT_EXCEPTION);
 
   fprintf(stdout, "Calling AndIMustPrint with a valid message...\n");
   AndIMustPrint("Hello, world!\n");
