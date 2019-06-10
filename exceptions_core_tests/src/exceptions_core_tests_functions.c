@@ -24,13 +24,13 @@ void AndIMustPrint(const char* pszMessage) {
 ///////////////////////////////////////////////////////////////////////////////
 // CalcArea function
 
-int CalcArea(int sideLength) {
+int CalcArea(int nSideLength) {
   fprintf(stdout, IN_CALC_AREA);
-  if (sideLength < 0) {
+  if (nSideLength < 0) {
     ThrowArgumentOutOfRangeException("nSideLength");
   }
 
-  return sideLength * sideLength;
+  return nSideLength * nSideLength;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
