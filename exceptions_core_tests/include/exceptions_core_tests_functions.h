@@ -5,6 +5,10 @@
 #ifndef __EXCEPTIONS_CORE_TESTS_FUNCTIONS_H__
 #define __EXCEPTIONS_CORE_TESTS_FUNCTIONS_H__
 
+/**
+ * @name PrintSoftwareTitleAndCopyright
+ * @brief Prints the software title and copyright message to the screen.
+ */
 void PrintSoftwareTitleAndCopyright();
 void TestThrowArgumentException();
 void TestThrowArgumentOutOfRangeException();
