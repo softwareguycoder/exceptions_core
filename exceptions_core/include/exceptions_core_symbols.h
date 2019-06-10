@@ -77,6 +77,12 @@
     "%s: ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n"
 #endif //ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_WITH_FXNNAME
 
+/**
+ * @name ERROR_FORMAT_FAILED_ACCESS_FILE
+ * @brief Error message displayed by the ThrowFileAccessFailedException
+ * function when it knows the path name of the file in question, the custom
+ * message is supplied, and the name of the user function is supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_ACCESS_FILE
 #define ERROR_FORMAT_FAILED_ACCESS_FILE \
     "%s: ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n\t%s"
