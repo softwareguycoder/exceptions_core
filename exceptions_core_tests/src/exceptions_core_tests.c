@@ -36,9 +36,9 @@ int main(int argc, char* argv[]) {
 
   //TestThrowNullReferenceException();
 
-  TestThrowOutOfMemoryExceptionWithCustomMessage();
+  //TestThrowOutOfMemoryExceptionWithCustomMessage();
 
-  //TestThrowOutOfMemoryExceptionWithNullMessage();
+  TestThrowOutOfMemoryExceptionWithNullMessage();
 
   //TestThrowUUIDInvalidException();
 
