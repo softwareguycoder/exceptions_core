@@ -52,6 +52,11 @@ void TestGetAndSetFailureExitCode();
  * @brief Tests the ThrowMarshalingException function.
  */
 void TestThrowMarshalingException();
+
+/**
+ * @name TestThrowNullReferenceException
+ * @brief Tests the ThrowNullReferenceException function.
+ */
 void TestThrowNullReferenceException();
 void TestThrowOutOfMemoryExceptionWithCustomMessage();
 void TestThrowOutOfMemoryExceptionWithNullMessage();
