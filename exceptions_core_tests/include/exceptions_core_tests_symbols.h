@@ -40,6 +40,15 @@
 #endif //SIDE_LENGTH_ARGUMENT_NAME
 
 /**
+ * @name SOFTWARE_COPYRIGHT
+ * @brief Used to display the software's copyright message on the console.
+ */
+#ifndef SOFTWARE_COPYRIGHT
+#define SOFTWARE_COPYRIGHT \
+  "Copyright (c) 2019 by Brian Hart\n\n"
+#endif //SOFTWARE_COPYRIGHT
+
+/**
  * @name SOFTWARE_TITLE
  * @brief Used to display this software's title on the console.
  */
