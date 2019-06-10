@@ -5,6 +5,11 @@
 #ifndef __EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
 
+/**
+ * @name MESSAGE_ARGUMENT_NAME
+ * @brief Used to supply the name of a parameter named 'pszMessage' to
+ * the ThrowArgumentException function.
+ */
 #ifndef MESSAGE_ARGUMENT_NAME
 #define MESSAGE_ARGUMENT_NAME \
   "pszMessage"
