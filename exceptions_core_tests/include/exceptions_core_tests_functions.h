@@ -16,6 +16,11 @@ void PrintSoftwareTitleAndCopyright();
  * @brief Tests the ThrowArgumentException function.
  */
 void TestThrowArgumentException();
+
+/**
+ * @name TestThrowArgumentOutOfRangeException
+ * @brief Tests the ThrowArgumentOutOfRangeException function.
+ */
 void TestThrowArgumentOutOfRangeException();
 void TestThrowDirectoryNotFoundException();
 void TestThrowFileAccessFailedException();
