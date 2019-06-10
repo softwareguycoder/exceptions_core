@@ -5,6 +5,13 @@
 #ifndef __EXCEPTIONS_CORE_SYMBOLS_H__
 #define __EXCEPTIONS_CORE_SYMBOLS_H__
 
+/**
+ * @name ERROR_ARGUMENT_EXCEPTION
+ * @brief Error message displayed when a required argument is not supplied
+ * to a function that needs it.
+ * @remarks This message is utilized by the exception function when a
+ * custom message is not specified by the caller.
+ */
 #ifndef ERROR_ARGUMENT_EXCEPTION
 #define ERROR_ARGUMENT_EXCEPTION \
     "ERROR (ArgumentException): A required argument was " \
