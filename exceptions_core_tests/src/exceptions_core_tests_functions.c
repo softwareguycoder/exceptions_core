@@ -41,7 +41,7 @@ int CalcArea(int nSideLength) {
 
 void PrintSoftwareTitleAndCopyright() {
   fprintf(stdout, SOFTWARE_TITLE);
-  fprintf(stdout, "Copyright (c) 2019 by Brian Hart\n\n");
+  fprintf(stdout, SOFTWARE_COPYRIGHT);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
