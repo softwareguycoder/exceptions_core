@@ -30,4 +30,9 @@
   "pszMessage"
 #endif //MESSAGE_ARGUMENT_NAME
 
+#ifndef SIDE_LENGTH_ARGUMENT_NAME
+#define SIDE_LENGTH_ARGUMENT_NAME \
+    "nSideLength"
+#endif //SIDE_LENGTH_ARGUMENT_NAME
+
 #endif //__EXCEPTIONS_CORE_TESTS_SYMBOLS_H__
