@@ -22,8 +22,8 @@
  * @name ERROR_FORMAT_ARGUMENT_EXCEPTION
  * @brief Error message displayed when a required argument is not supplied
  * to a function that needs it.
- * @remarks Incorporates a custom error message that the caller of the
- * ThrowArgumentException function provides.
+ * @remarks Incorporates the name of the user function parameter that was
+ * required but for which a value was not supplied.
  */
 #ifndef ERROR_FORMAT_ARGUMENT_EXCEPTION
 #define ERROR_FORMAT_ARGUMENT_EXCEPTION \
