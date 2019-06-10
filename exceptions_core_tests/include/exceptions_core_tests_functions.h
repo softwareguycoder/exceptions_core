@@ -10,6 +10,11 @@
  * @brief Prints the software title and copyright message to the screen.
  */
 void PrintSoftwareTitleAndCopyright();
+
+/**
+ * @name TestThrowArgumentException
+ * @brief Tests the ThrowArgumentException function.
+ */
 void TestThrowArgumentException();
 void TestThrowArgumentOutOfRangeException();
 void TestThrowDirectoryNotFoundException();
