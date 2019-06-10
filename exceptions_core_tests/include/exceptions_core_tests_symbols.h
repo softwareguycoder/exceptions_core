@@ -35,6 +35,17 @@
 #endif //CALLING_AND_I_MUST_PRINT_WITH_VALID_INPUT
 
 /**
+ * @name CODE_SHOULD_NEVER_GET_HERE
+ * @brief Message displayed to the console informing the interactive user
+ * that the code execution should not reach this point. If you see this message
+ * when executing this software, then something went wrong.
+ */
+#ifndef CODE_SHOULD_NEVER_GET_HERE
+#define CODE_SHOULD_NEVER_GET_HERE \
+  "The code should never get here.\n"
+#endif //CODE_SHOULD_NEVER_GET_HERE
+
+/**
  * @name HELLO_WORLD
  * @brief Message used to display Hello, world! to the console, for testing
  * purposes.
