@@ -18,7 +18,7 @@ void AndIMustPrint(const char* pszMessage) {
   if (IsNullOrWhiteSpace(pszMessage)) {
     ThrowArgumentException(MESSAGE_ARGUMENT_NAME);
   }
-  fprintf(stdout, "AndIMustPrint: %s", pszMessage);
+  fprintf(stdout, AND_I_MUST_PRINT_OUTPUT_FORMAT, pszMessage);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
