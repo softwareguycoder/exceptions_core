@@ -45,6 +45,18 @@
 #endif //ERROR_FORMAT_ARGUMENT_OUT_OF_RANGE_EXCEPTION
 
 /**
+ * @name ERROR_FORMAT_FAILED_ACCESS_FILE
+ * @brief Error message displayed by the ThrowFileAccessFailedException
+ * function when it knows the path name of the file in question, the custom
+ * message is supplied, and the name of the user function is supplied.
+ */
+#ifndef ERROR_FORMAT_FAILED_ACCESS_FILE
+#define ERROR_FORMAT_FAILED_ACCESS_FILE \
+    "%s: ERROR (FileAccessFailedException):\n\tCan't access the file '%s'" \
+    ".\n\t%s"
+#endif //ERROR_FORMAT_FAILED_ACCESS_FILE
+
+/**
  * @name ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME
  * @brief Format used for the message written to STDERR by the
  * ThrowFileAccessFailedException function when no custom message is supplied,
@@ -54,17 +66,6 @@
 #define ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME \
     "ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n"
 #endif //ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_NO_FXNNAME
-
-/**
- * @name ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
- * @brief Format used for the message written to STDERR by the
- * ThrowFileAccessFailedException function when a custom message is supplied,
- * and the name of the user function that failed is not supplied.
- */
-#ifndef ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
-#define ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME \
-    "ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n\t%s"
-#endif //ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
 
 /**
  * @name ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_WITH_FXNNAME
@@ -78,16 +79,15 @@
 #endif //ERROR_FORMAT_FAILED_ACCESS_FILE_NO_MESSAGE_WITH_FXNNAME
 
 /**
- * @name ERROR_FORMAT_FAILED_ACCESS_FILE
- * @brief Error message displayed by the ThrowFileAccessFailedException
- * function when it knows the path name of the file in question, the custom
- * message is supplied, and the name of the user function is supplied.
+ * @name ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
+ * @brief Format used for the message written to STDERR by the
+ * ThrowFileAccessFailedException function when a custom message is supplied,
+ * and the name of the user function that failed is not supplied.
  */
-#ifndef ERROR_FORMAT_FAILED_ACCESS_FILE
-#define ERROR_FORMAT_FAILED_ACCESS_FILE \
-    "%s: ERROR (FileAccessFailedException):\n\tCan't access the file '%s'" \
-    ".\n\t%s"
-#endif //ERROR_FORMAT_FAILED_ACCESS_FILE
+#ifndef ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
+#define ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME \
+    "ERROR (FileAccessFailedException):\n\tCan't access the file '%s'.\n\t%s"
+#endif //ERROR_FORMAT_FAILED_ACCESS_FILE_WITH_MESSAGE_NO_FXNNAME
 
 /**
  * @name ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_NO_FXNNAME
@@ -101,15 +101,15 @@
 #endif //ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_NO_FXNNAME
 
 /**
- * @name ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME
- * @brief Format used for the message written to STDERR by the
- * ThrowFileNotFoundException function when a custom message is supplied,
- * and the name of the user function that failed is not supplied.
+ * @name ERROR_FORMAT_FAILED_FIND_FILE
+ * @brief Error message displayed by the ThrowFileNotFoundException
+ * function when it knows the path name of the file in question, the custom
+ * message is supplied, and the name of the user function is supplied.
  */
-#ifndef ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME
-#define ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME \
-    "ERROR (FileNotFoundException):\n\tFile '%s' not found.\n\t%s"
-#endif //ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME
+#ifndef ERROR_FORMAT_FAILED_FIND_FILE
+#define ERROR_FORMAT_FAILED_FIND_FILE \
+    "%s: ERROR (FileNotFoundException):\n\tFile '%s' not found.\n\t%s"
+#endif //ERROR_FORMAT_FAILED_FIND_FILE
 
 /**
  * @name ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_WITH_FXNNAME
@@ -123,15 +123,26 @@
 #endif //ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_WITH_FXNNAME
 
 /**
- * @name ERROR_FORMAT_FAILED_FIND_FILE
- * @brief Error message displayed by the ThrowFileNotFoundException
+ * @name ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME
+ * @brief Format used for the message written to STDERR by the
+ * ThrowFileNotFoundException function when a custom message is supplied,
+ * and the name of the user function that failed is not supplied.
+ */
+#ifndef ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME
+#define ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME \
+    "ERROR (FileNotFoundException):\n\tFile '%s' not found.\n\t%s"
+#endif //ERROR_FORMAT_FAILED_FIND_FILE_WITH_MESSAGE_NO_FXNNAME
+
+/**
+ * @name ERROR_FORMAT_FAILED_FIND_DIR
+ * @brief Error message displayed by the ThrowDirectoryNotFoundException
  * function when it knows the path name of the file in question, the custom
  * message is supplied, and the name of the user function is supplied.
  */
-#ifndef ERROR_FORMAT_FAILED_FIND_FILE
-#define ERROR_FORMAT_FAILED_FIND_FILE \
-    "%s: ERROR (FileNotFoundException):\n\tFile '%s' not found.\n\t%s"
-#endif //ERROR_FORMAT_FAILED_FIND_FILE
+#ifndef ERROR_FORMAT_FAILED_FIND_DIR
+#define ERROR_FORMAT_FAILED_FIND_DIR \
+  "%s: ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
+#endif //ERROR_FORMAT_FAILED_FIND_DIR
 
 /**
  * @name ERROR_FORMAT_FAILED_FIND_DIR_NO_MESSAGE_NO_FXNNAME
@@ -145,17 +156,6 @@
 #endif //ERROR_FORMAT_FAILED_FIND_DIR_NO_MESSAGE_NO_FXNNAME
 
 /**
- * @name ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
- * @brief Format used for the message written to STDERR by the
- * ThrowDirectoryNotFoundException function when a custom message is supplied,
- * and the name of the user function that failed is not supplied.
- */
-#ifndef ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
-#define ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME \
-    "ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
-#endif //ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
-
-/**
  * @name ERROR_FORMAT_FAILED_FIND_DIR_WITH_FXNNAME_NO_MESSAGE
  * @brief Format used for the message written to STDERR by the
  * ThrowDirectoryNotFoundException function when no custom message is supplied,
@@ -167,15 +167,15 @@
 #endif //ERROR_FORMAT_FAILED_FIND_DIR_WITH_FXNNAME_NO_MESSAGE
 
 /**
- * @name ERROR_FORMAT_FAILED_FIND_DIR
- * @brief Error message displayed by the ThrowDirectoryNotFoundException
- * function when it knows the path name of the file in question, the custom
- * message is supplied, and the name of the user function is supplied.
+ * @name ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
+ * @brief Format used for the message written to STDERR by the
+ * ThrowDirectoryNotFoundException function when a custom message is supplied,
+ * and the name of the user function that failed is not supplied.
  */
-#ifndef ERROR_FORMAT_FAILED_FIND_DIR
-#define ERROR_FORMAT_FAILED_FIND_DIR \
-  "%s: ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
-#endif //ERROR_FORMAT_FAILED_FIND_DIR
+#ifndef ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
+#define ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME \
+    "ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
+#endif //ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
 
 /**
  * @name ERROR_FORMAT_MARSHALING_EXCEPTION
