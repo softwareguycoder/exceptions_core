@@ -155,6 +155,12 @@
     "ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found.\n\t%s"
 #endif //ERROR_FORMAT_FAILED_FIND_DIR_WITH_MESSAGE_NO_FXNNAME
 
+/**
+ * @name ERROR_FORMAT_FAILED_FIND_DIR_WITH_FXNNAME_NO_MESSAGE
+ * @brief Format used for the message written to STDERR by the
+ * ThrowDirectoryNotFoundException function when no custom message is supplied,
+ * and the name of the user function that failed is supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_FIND_DIR_WITH_FXNNAME_NO_MESSAGE
 #define ERROR_FORMAT_FAILED_FIND_DIR_WITH_FXNNAME_NO_MESSAGE \
   "%s: ERROR (DirectoryNotFoundException):\n\tFolder '%s' not found."
