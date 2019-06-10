@@ -28,6 +28,11 @@ void TestThrowArgumentOutOfRangeException();
  * @brief Tests the ThrowDirectoryNotFoundException function.
  */
 void TestThrowDirectoryNotFoundException();
+
+/**
+ * @name TestThrowFileAccessFailedException
+ * @brief Tests the ThrowFileAccessFailedException function
+ */
 void TestThrowFileAccessFailedException();
 void TestThrowFileNotFoundException();
 void TestGetAndSetFailureExitCode();
