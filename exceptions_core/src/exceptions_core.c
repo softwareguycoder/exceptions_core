@@ -90,7 +90,7 @@ void ThrowArgumentException(const char* pszParamName) {
     fprintf(stderr, ERROR_FORMAT_ARGUMENT_EXCEPTION,
         pszParamName);
   } else {
-    fprint(stderr, ERROR_ARGUMENT_EXCEPTION);
+    fprintf(stderr, ERROR_ARGUMENT_EXCEPTION);
   }
   exit(GetFailureExitCode());
 }
@@ -204,7 +204,7 @@ void ThrowOutOfMemoryException(const char* pszMessage) {
   if (IsNullOrWhiteSpace(pszMessage)) {
     fprintf(stderr, ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE);
   } else {
-    fprintf(stderr, pszMessage);
+    fprintf(stderr, "%s", pszMessage);
   }
   exit(GetFailureExitCode());
 }
