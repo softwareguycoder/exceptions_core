@@ -1,10 +1,10 @@
-// tests.c - Implements functions needed to run the tests application
+// exceptions_core_tests.c - Implements functions needed to run the tests application
 //
 
 #include "stdafx.h"
-#include "tests.h"
+#include "exceptions_core_tests.h"
 
-#include "tests_functions.h"
+#include "exceptions_core_tests_functions.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // main application code

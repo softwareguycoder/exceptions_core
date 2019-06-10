@@ -65,7 +65,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/api_core}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/tests/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/exceptions_core_tests/include}&quot;"/>
                                     								
                                 </option>
                                 								
