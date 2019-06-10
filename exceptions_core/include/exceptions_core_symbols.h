@@ -122,6 +122,12 @@
     "%s: ERROR (FileNotFoundException):\n\tFile '%s' not found.\n"
 #endif //ERROR_FORMAT_FAILED_FIND_FILE_NO_MESSAGE_WITH_FXNNAME
 
+/**
+ * @name ERROR_FORMAT_FAILED_FIND_FILE
+ * @brief Error message displayed by the ThrowFileNotFoundException
+ * function when it knows the path name of the file in question, the custom
+ * message is supplied, and the name of the user function is supplied.
+ */
 #ifndef ERROR_FORMAT_FAILED_FIND_FILE
 #define ERROR_FORMAT_FAILED_FIND_FILE \
     "%s: ERROR (FileNotFoundException):\n\tFile '%s' not found.\n\t%s"
