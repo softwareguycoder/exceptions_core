@@ -77,6 +77,11 @@ void TestThrowOutOfMemoryExceptionWithNullMessage();
  * @brief Tests the ThrowUUIDInvalidException function.
  */
 void TestThrowUUIDInvalidException();
+
+/**
+ * @name TestThrowUUIDNullException
+ * @brief Tests the TestThrowUUIDNullException function.
+ */
 void TestThrowUUIDNullException();
 
 #endif //__EXCEPTIONS_CORE_TESTS_FUNCTIONS_H__
