@@ -58,7 +58,7 @@ void TestThrowArgumentException() {
   AndIMustPrint(NULL);
 
   fprintf(stdout,
-      "TestThrowArgumentException: The code should never get here.\n");
+      "The code should never get here.\n");
 }
 
 ///////////////////////////////////////////////////////////////////////////////
