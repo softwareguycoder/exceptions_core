@@ -46,6 +46,11 @@ void TestThrowFileNotFoundException();
  * @brief Tests the GetFailureExitCode and SetFailureExitCode functions.
  */
 void TestGetAndSetFailureExitCode();
+
+/**
+ * @name TestThrowMarshalingException
+ * @brief Tests the ThrowMarshalingException function.
+ */
 void TestThrowMarshalingException();
 void TestThrowNullReferenceException();
 void TestThrowOutOfMemoryExceptionWithCustomMessage();
