@@ -40,7 +40,7 @@ int CalcArea(int nSideLength) {
 // PrintSoftwareTitleAndCopyright function
 
 void PrintSoftwareTitleAndCopyright() {
-  fprintf(stdout, "exceptions_core Library Test Harness v1.0\n");
+  fprintf(stdout, SOFTWARE_TITLE);
   fprintf(stdout, "Copyright (c) 2019 by Brian Hart\n\n");
 }
 
