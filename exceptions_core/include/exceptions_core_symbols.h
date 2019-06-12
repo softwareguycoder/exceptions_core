@@ -208,7 +208,7 @@
  */
 #ifndef ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE
 #define ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE \
-  "ERROR (OutOfMemoryException):  %s"
+  "ERROR (OutOfMemoryException):\n\t%s"
 #endif //ERROR_OUT_OF_MEMORY_EXCEPTION_CUSTOM_MESSAGE
 
 /**
@@ -220,7 +220,7 @@
  */
 #ifndef ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
 #define ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE \
-  "ERROR (OutOfMemoryException):  The system was unable to allocate storage.\n"
+  "ERROR (OutOfMemoryException):\n\tThe system was unable to allocate storage.\n"
 #endif //ERROR_OUT_OF_MEMORY_EXCEPTION_DEFAULT_MESSAGE
 
 /**
